@@ -1,0 +1,417 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
+\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red212\green212\blue212;\red113\green192\blue131;
+\red167\green197\blue152;\red183\green111\blue247;\red246\green124\blue48;\red54\green192\blue160;}
+{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c86275\c86275\c86275;\cssrgb\c50588\c78824\c58431;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;\cssrgb\c98039\c56471\c24314;\cssrgb\c23922\c78824\c69020;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "en"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 The Modern PhD: A Data-Driven Look at the Researcher's Journey\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.jsdelivr.net/npm/chart.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.gstatic.com"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf9 \strokec9 'Inter'\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #f0f4f8\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .chart-container\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 max-width:\cf5 \strokec5  \cf10 \strokec10 600px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 margin-left:\cf5 \strokec5  \cf7 \strokec7 auto\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 margin-right:\cf5 \strokec5  \cf7 \strokec7 auto\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 400px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 max-height:\cf5 \strokec5  \cf10 \strokec10 450px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         @\cf2 \strokec2 media\cf5 \strokec5  (\cf2 \strokec2 max-width:\cf5 \strokec5  768\cf2 \strokec2 px\cf5 \strokec5 ) \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             .chart-container \{\cb1 \
+\cb3                 \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 350px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\cb3         \cf2 \strokec2 .text-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bg-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .border-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .text-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bg-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .border-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bg-deep-blue\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #005f73\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .text-light-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #94d2bd\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bg-light-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #94d2bd\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bg-light-sand\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #e9d8a6\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .icon-style\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 font-size:\cf5 \strokec5  \cf10 \strokec10 2.5rem\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 line-height:\cf5 \strokec5  \cf10 \strokec10 1\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-800"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 header\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-deep-blue text-white text-center py-12 px-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 h1\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl md:text-6xl font-black tracking-tight"\cf6 \strokec6 >\cf5 \strokec5 The Modern PhD\cf6 \strokec6 </\cf2 \strokec2 h1\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-teal"\cf6 \strokec6 >\cf5 \strokec5 A data-driven look at what drives, challenges, and rewards the next generation of researchers.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 header\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 main\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto p-4 md:p-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "motivations"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Heart of a Researcher\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The decision to pursue a doctorate is deeply personal, rooted in a powerful set of intrinsic motivations.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-3 gap-8 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55358 \u56800 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Passion for a Subject\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 An enduring curiosity and a genuine love of learning are the primary drivers for prospective PhD candidates.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55357 \u56481 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Original Contribution\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 Researchers are animated by the desire to create new knowledge and make a unique contribution to their field.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55357 \u56520 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Personal Growth\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 A PhD is viewed as the ultimate intellectual journey\'97a quest for profound personal and professional development.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "decision-factors"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:p-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Decision Matrix\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Choosing a university is a complex process. While reputation matters, applicants weigh a nuanced set of factors.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-[500px] md:h-[600px]"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "decisionFactorsChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mt-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The specific research program and supervisor reputation are foundational, but practical concerns like funding, location, and flexibility are critical differentiators for applicants.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "barriers"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 Overcoming the Hurdles\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Significant structural barriers can prevent talented individuals from pursuing research.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 The Financial Equation\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-4"\cf6 \strokec6 >\cf5 \strokec5 The "fear of debt" is the most pervasive barrier. Fully-funded studentships are not just an incentive; they are a powerful tool for equity, transforming a PhD from a high-risk gamble into a viable career step.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-light-sand p-4 rounded-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-center"\cf6 \strokec6 >\cf5 \strokec5 The Power of Full Funding\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-center text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Models like Centres for Doctoral Training (CDTs) address key concerns:\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 ul\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 space-y-1 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Financial Anxiety\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Fear of Isolation (Cohort Model)\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Career Development\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 ul\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 Barriers to Inclusion (EDI)\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-4"\cf6 \strokec6 >\cf5 \strokec5 Students from underrepresented groups face distinct and intersecting challenges that can hinder their path to a PhD.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                      \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  ethnic minorities face funding gaps & lack of role models.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  disabled students fear stigma & face support delays.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  those with caring duties face intense time & financial pressure.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "experience"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Ideal PhD Experience\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 What does a successful doctoral journey look like? The Postgraduate Research Experience Survey (PRES) provides the blueprint.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-1 flex flex-col justify-center items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-2 text-center"\cf6 \strokec6 >\cf5 \strokec5 Overall Satisfaction\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-64 w-64"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                          \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "overallSatisfactionChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mt-2 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Across the UK, 81% of PGRs are satisfied with their experience, but key areas determine success.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 Pillars of a Positive Experience\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-2 gap-6 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Supervision\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Expert, regular, and supportive guidance.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Resources\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Access to labs, libraries, and workspaces.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Community\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 A collaborative, non-isolating culture.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Development\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Skills training for future careers.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                          \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Wellbeing\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Mental and emotional health support.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                          \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Assessment\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Clear, transparent progress milestones.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3              \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-8 bg-white rounded-lg shadow-md p-6 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 The Challenge of Isolation\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-6xl font-black text-main-teal my-4"\cf6 \strokec6 >\cf5 \strokec5 80%\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 of PhD students agree that a career in research can be lonely and isolating, making a supportive research culture a critical differentiator for universities.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "outcomes"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 A Launchpad for Life\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 A PhD is a powerful investment, opening doors to diverse careers and delivering a clear financial return.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 The "Dual Career Pathway"\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The majority of PhD holders build careers outside of traditional academia.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-80"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "careerPathsChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 The Financial Return (ROI)\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Doctoral graduates see a significant and sustained salary premium over time.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                      \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-80"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "salaryROIChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 main\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 footer\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-deep-blue text-white text-center mt-12 py-6 px-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-light-teal"\cf6 \strokec6 >\cf5 \strokec5 Data synthesized from research on postgraduate researcher motivations and experiences. This infographic is for illustrative purposes.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xs text-gray-400 mt-2"\cf6 \strokec6 >\cf5 \strokec5 Created on: August 05, 2025\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 footer\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 tooltipItems\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 =>\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  item \cf8 \strokec8 =\cf5 \strokec5  tooltipItems\cf8 \strokec8 [\cf12 \strokec12 0\cf8 \strokec8 ];\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 let\cf5 \strokec5  label \cf8 \strokec8 =\cf5 \strokec5  item\cf8 \strokec8 .\cf5 \strokec5 chart\cf8 \strokec8 .\cf5 \strokec5 data\cf8 \strokec8 .\cf5 \strokec5 labels\cf8 \strokec8 [\cf5 \strokec5 item\cf8 \strokec8 .\cf5 \strokec5 dataIndex\cf8 \strokec8 ];\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf13 \strokec13 Array\cf8 \strokec8 .\cf5 \strokec5 isArray\cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 ))\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 .\cf5 \strokec5 join\cf8 \strokec8 (\cf9 \strokec9 ' '\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  wrapLabel \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 =>\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  maxLen \cf8 \strokec8 =\cf5 \strokec5  \cf12 \strokec12 16\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 .\cf5 \strokec5 length \cf8 \strokec8 <=\cf5 \strokec5  maxLen\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  words \cf8 \strokec8 =\cf5 \strokec5  label\cf8 \strokec8 .\cf5 \strokec5 split\cf8 \strokec8 (\cf9 \strokec9 ' '\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  lines \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 [];\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 let\cf5 \strokec5  currentLine \cf8 \strokec8 =\cf5 \strokec5  \cf9 \strokec9 ''\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 for\cf5 \strokec5  \cf8 \strokec8 (\cf11 \strokec11 const\cf5 \strokec5  word \cf11 \strokec11 of\cf5 \strokec5  words\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 ((\cf5 \strokec5 currentLine \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 ' '\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  word\cf8 \strokec8 ).\cf5 \strokec5 trim\cf8 \strokec8 ().\cf5 \strokec5 length \cf8 \strokec8 >\cf5 \strokec5  maxLen\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     lines\cf8 \strokec8 .\cf5 \strokec5 push\cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 .\cf5 \strokec5 trim\cf8 \strokec8 ());\cf5 \cb1 \strokec5 \
+\cb3                     currentLine \cf8 \strokec8 =\cf5 \strokec5  word\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     currentLine \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 currentLine \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 ' '\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  word\cf8 \strokec8 ).\cf5 \strokec5 trim\cf8 \strokec8 ();\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 lines\cf8 \strokec8 .\cf5 \strokec5 push\cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 .\cf5 \strokec5 trim\cf8 \strokec8 ());\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 return\cf5 \strokec5  lines\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  brilliantBlues \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             deepBlue\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#005f73'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             mainTeal\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#0a9396'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             lightTeal\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#94d2bd'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             lightSand\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#e9d8a6'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             accentOrange\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ee9b00'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             darkOrange\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ca6702'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             darkRed\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#9b2226'\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
+\
+\cb3         window\cf8 \strokec8 .\cf5 \strokec5 onload \cf8 \strokec8 =\cf5 \strokec5  \cf11 \strokec11 function\cf5 \strokec5  \cf8 \strokec8 ()\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  decisionFactorsCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'decisionFactorsChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  decisionFactorsData \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 'Course Suitability'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
+\cb3                     \cf9 \strokec9 'Financial Relief (Funding)'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
+\cb3                     \cf9 \strokec9 'Supervisor Reputation'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
+\cb3                     \cf9 \strokec9 'Institutional Reputation'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
+\cb3                     \cf9 \strokec9 'Career Prospects & ROI'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 'Fear of Debt'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 'Locality & Proximity'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 'Programme Flexibility'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 'Lifestyle & Community'\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 ].\cf5 \strokec5 map\cf8 \strokec8 (\cf5 \strokec5 wrapLabel\cf8 \strokec8 ),\cf5 \cb1 \strokec5 \
+\cb3                 datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\{\cf5 \cb1 \strokec5 \
+\cb3                     label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Importance Score'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 95\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 92\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 90\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 85\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 82\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 80\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 75\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 70\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 65\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                     backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
+\cb3                         brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 deepBlue\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                         brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 darkOrange\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 darkRed\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightSand\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cb1 \
+\cb3                     \cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                     borderColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ffffff'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     borderWidth\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 1\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}]\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 decisionFactorsCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bar'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  decisionFactorsData\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     indexAxis\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'y'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         x\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                             beginAtZero\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  color\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#e0e0e0'\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                            grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  overallSatisfactionCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'overallSatisfactionChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 overallSatisfactionCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'doughnut'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 'Satisfied'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 'Not Satisfied'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\{\cf5 \cb1 \strokec5 \
+\cb3                         data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 81\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 19\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                         backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \strokec5 brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '#e0e0e0'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                         borderColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ffffff'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                         borderWidth\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 2\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \}]\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     cutout\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '70%'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  careerPathsCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'careerPathsChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 careerPathsCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bar'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 'PhD Graduates'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Industry R&D'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 45\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Academia (Postdoc/Lecturer)'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 20\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightTeal \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Finance & Consultancy'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 15\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Government & Public Sector'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 12\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 deepBlue \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Other'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 8\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightSand \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 ]\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     indexAxis\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'y'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         x\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  stacked\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \strokec5  grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \strokec5  ticks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  stacked\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \strokec5  grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  position\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bottom'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  salaryROICtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'salaryROIChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 salaryROICtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'line'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 '1 Year Post-Grad'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '5 Years Post-Grad'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '10 Years Post-Grad'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                             label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'PhD Holder Median Salary'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 34000\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 39200\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 43000\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                             borderColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'rgba(238, 155, 0, 0.2)'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             fill\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             tension\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 0.1\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                             label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 "Master's Holder Median Salary"\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 30000\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 33700\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 38000\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3                             borderColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'rgba(10, 147, 150, 0.2)'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             fill\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             tension\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 0.1\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 ]\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                             beginAtZero\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                             ticks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                                 callback\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 function\cf8 \strokec8 (\cf5 \strokec5 value\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf11 \strokec11 return\cf5 \strokec5  \cf9 \strokec9 '\'a3'\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 value \cf8 \strokec8 /\cf5 \strokec5  \cf12 \strokec12 1000\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 'k'\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  position\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bottom'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+}
