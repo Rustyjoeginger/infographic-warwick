@@ -1,417 +1,414 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
-\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red212\green212\blue212;\red113\green192\blue131;
-\red167\green197\blue152;\red183\green111\blue247;\red246\green124\blue48;\red54\green192\blue160;}
-{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
-\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c86275\c86275\c86275;\cssrgb\c50588\c78824\c58431;
-\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;\cssrgb\c98039\c56471\c24314;\cssrgb\c23922\c78824\c69020;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "en"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 The Modern PhD: A Data-Driven Look at the Researcher's Journey\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.jsdelivr.net/npm/chart.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.gstatic.com"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf9 \strokec9 'Inter'\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #f0f4f8\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .chart-container\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 max-width:\cf5 \strokec5  \cf10 \strokec10 600px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-left:\cf5 \strokec5  \cf7 \strokec7 auto\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 margin-right:\cf5 \strokec5  \cf7 \strokec7 auto\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 400px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 max-height:\cf5 \strokec5  \cf10 \strokec10 450px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         @\cf2 \strokec2 media\cf5 \strokec5  (\cf2 \strokec2 max-width:\cf5 \strokec5  768\cf2 \strokec2 px\cf5 \strokec5 ) \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             .chart-container \{\cb1 \
-\cb3                 \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 350px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \}\cb1 \
-\cb3         \cf2 \strokec2 .text-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .bg-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .border-accent-orange\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .text-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .bg-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .border-main-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #0a9396\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .bg-deep-blue\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #005f73\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .text-light-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #94d2bd\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .bg-light-teal\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #94d2bd\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .bg-light-sand\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #e9d8a6\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 .icon-style\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-size:\cf5 \strokec5  \cf10 \strokec10 2.5rem\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 line-height:\cf5 \strokec5  \cf10 \strokec10 1\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #ee9b00\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-800"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 header\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-deep-blue text-white text-center py-12 px-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 h1\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl md:text-6xl font-black tracking-tight"\cf6 \strokec6 >\cf5 \strokec5 The Modern PhD\cf6 \strokec6 </\cf2 \strokec2 h1\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-teal"\cf6 \strokec6 >\cf5 \strokec5 A data-driven look at what drives, challenges, and rewards the next generation of researchers.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 header\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 main\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto p-4 md:p-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "motivations"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Heart of a Researcher\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The decision to pursue a doctorate is deeply personal, rooted in a powerful set of intrinsic motivations.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-3 gap-8 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55358 \u56800 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Passion for a Subject\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 An enduring curiosity and a genuine love of learning are the primary drivers for prospective PhD candidates.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55357 \u56481 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Original Contribution\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 Researchers are animated by the desire to create new knowledge and make a unique contribution to their field.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "icon-style mb-4"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55357 \u56520 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2"\cf6 \strokec6 >\cf5 \strokec5 Personal Growth\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \strokec5 A PhD is viewed as the ultimate intellectual journey\'97a quest for profound personal and professional development.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "decision-factors"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:p-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Decision Matrix\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Choosing a university is a complex process. While reputation matters, applicants weigh a nuanced set of factors.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-[500px] md:h-[600px]"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "decisionFactorsChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mt-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The specific research program and supervisor reputation are foundational, but practical concerns like funding, location, and flexibility are critical differentiators for applicants.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "barriers"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 Overcoming the Hurdles\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Significant structural barriers can prevent talented individuals from pursuing research.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 The Financial Equation\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-4"\cf6 \strokec6 >\cf5 \strokec5 The "fear of debt" is the most pervasive barrier. Fully-funded studentships are not just an incentive; they are a powerful tool for equity, transforming a PhD from a high-risk gamble into a viable career step.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-light-sand p-4 rounded-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-center"\cf6 \strokec6 >\cf5 \strokec5 The Power of Full Funding\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-center text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Models like Centres for Doctoral Training (CDTs) address key concerns:\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 ul\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 space-y-1 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Financial Anxiety\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Fear of Isolation (Cohort Model)\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 ><\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u10003 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Career Development\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 ul\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 Barriers to Inclusion (EDI)\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-4"\cf6 \strokec6 >\cf5 \strokec5 Students from underrepresented groups face distinct and intersecting challenges that can hinder their path to a PhD.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                      \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  ethnic minorities face funding gaps & lack of role models.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  disabled students fear stigma & face support delays.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl mr-3"\cf6 \strokec6 >\cf5 \strokec5  those with caring duties face intense time & financial pressure.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "experience"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 The Ideal PhD Experience\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 What does a successful doctoral journey look like? The Postgraduate Research Experience Survey (PRES) provides the blueprint.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-1 flex flex-col justify-center items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-2 text-center"\cf6 \strokec6 >\cf5 \strokec5 Overall Satisfaction\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-64 w-64"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                          \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "overallSatisfactionChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mt-2 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Across the UK, 81% of PGRs are satisfied with their experience, but key areas determine success.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 Pillars of a Positive Experience\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-2 gap-6 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Supervision\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Expert, regular, and supportive guidance.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Resources\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Access to labs, libraries, and workspaces.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Community\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 A collaborative, non-isolating culture.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Development\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Skills training for future careers.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                          \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Wellbeing\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Mental and emotional health support.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                          \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold"\cf6 \strokec6 >\cf5 \strokec5 Assessment\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Clear, transparent progress milestones.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3              \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-8 bg-white rounded-lg shadow-md p-6 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold text-accent-orange"\cf6 \strokec6 >\cf5 \strokec5 The Challenge of Isolation\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-6xl font-black text-main-teal my-4"\cf6 \strokec6 >\cf5 \strokec5 80%\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 of PhD students agree that a career in research can be lonely and isolating, making a supportive research culture a critical differentiator for universities.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "outcomes"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-main-teal"\cf6 \strokec6 >\cf5 \strokec5 A Launchpad for Life\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-2 text-lg text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 A PhD is a powerful investment, opening doors to diverse careers and delivering a clear financial return.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 The "Dual Career Pathway"\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 The majority of PhD holders build careers outside of traditional academia.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-80"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "careerPathsChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white rounded-lg shadow-md p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-bold mb-4 text-center"\cf6 \strokec6 >\cf5 \strokec5 The Financial Return (ROI)\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-4 text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 Doctoral graduates see a significant and sustained salary premium over time.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                      \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "chart-container h-80"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 canvas\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "salaryROIChart"\cf6 \strokec6 ></\cf2 \strokec2 canvas\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 main\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 footer\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-deep-blue text-white text-center mt-12 py-6 px-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm text-light-teal"\cf6 \strokec6 >\cf5 \strokec5 Data synthesized from research on postgraduate researcher motivations and experiences. This infographic is for illustrative purposes.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xs text-gray-400 mt-2"\cf6 \strokec6 >\cf5 \strokec5 Created on: August 05, 2025\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 footer\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf11 \strokec11 const\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 tooltipItems\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 =>\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  item \cf8 \strokec8 =\cf5 \strokec5  tooltipItems\cf8 \strokec8 [\cf12 \strokec12 0\cf8 \strokec8 ];\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 let\cf5 \strokec5  label \cf8 \strokec8 =\cf5 \strokec5  item\cf8 \strokec8 .\cf5 \strokec5 chart\cf8 \strokec8 .\cf5 \strokec5 data\cf8 \strokec8 .\cf5 \strokec5 labels\cf8 \strokec8 [\cf5 \strokec5 item\cf8 \strokec8 .\cf5 \strokec5 dataIndex\cf8 \strokec8 ];\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf13 \strokec13 Array\cf8 \strokec8 .\cf5 \strokec5 isArray\cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 ))\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 .\cf5 \strokec5 join\cf8 \strokec8 (\cf9 \strokec9 ' '\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf11 \strokec11 const\cf5 \strokec5  wrapLabel \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 =>\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  maxLen \cf8 \strokec8 =\cf5 \strokec5  \cf12 \strokec12 16\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 label\cf8 \strokec8 .\cf5 \strokec5 length \cf8 \strokec8 <=\cf5 \strokec5  maxLen\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 \cf11 \strokec11 return\cf5 \strokec5  label\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  words \cf8 \strokec8 =\cf5 \strokec5  label\cf8 \strokec8 .\cf5 \strokec5 split\cf8 \strokec8 (\cf9 \strokec9 ' '\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  lines \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 [];\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 let\cf5 \strokec5  currentLine \cf8 \strokec8 =\cf5 \strokec5  \cf9 \strokec9 ''\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 for\cf5 \strokec5  \cf8 \strokec8 (\cf11 \strokec11 const\cf5 \strokec5  word \cf11 \strokec11 of\cf5 \strokec5  words\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 ((\cf5 \strokec5 currentLine \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 ' '\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  word\cf8 \strokec8 ).\cf5 \strokec5 trim\cf8 \strokec8 ().\cf5 \strokec5 length \cf8 \strokec8 >\cf5 \strokec5  maxLen\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     lines\cf8 \strokec8 .\cf5 \strokec5 push\cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 .\cf5 \strokec5 trim\cf8 \strokec8 ());\cf5 \cb1 \strokec5 \
-\cb3                     currentLine \cf8 \strokec8 =\cf5 \strokec5  word\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     currentLine \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 currentLine \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 ' '\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  word\cf8 \strokec8 ).\cf5 \strokec5 trim\cf8 \strokec8 ();\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 lines\cf8 \strokec8 .\cf5 \strokec5 push\cf8 \strokec8 (\cf5 \strokec5 currentLine\cf8 \strokec8 .\cf5 \strokec5 trim\cf8 \strokec8 ());\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 return\cf5 \strokec5  lines\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf11 \strokec11 const\cf5 \strokec5  brilliantBlues \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             deepBlue\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#005f73'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             mainTeal\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#0a9396'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             lightTeal\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#94d2bd'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             lightSand\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#e9d8a6'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             accentOrange\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ee9b00'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             darkOrange\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ca6702'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3             darkRed\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#9b2226'\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
-\
-\cb3         window\cf8 \strokec8 .\cf5 \strokec5 onload \cf8 \strokec8 =\cf5 \strokec5  \cf11 \strokec11 function\cf5 \strokec5  \cf8 \strokec8 ()\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  decisionFactorsCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'decisionFactorsChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  decisionFactorsData \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 'Course Suitability'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
-\cb3                     \cf9 \strokec9 'Financial Relief (Funding)'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
-\cb3                     \cf9 \strokec9 'Supervisor Reputation'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
-\cb3                     \cf9 \strokec9 'Institutional Reputation'\cf8 \strokec8 ,\cf5 \strokec5  \cb1 \
-\cb3                     \cf9 \strokec9 'Career Prospects & ROI'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 'Fear of Debt'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 'Locality & Proximity'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 'Programme Flexibility'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     \cf9 \strokec9 'Lifestyle & Community'\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 ].\cf5 \strokec5 map\cf8 \strokec8 (\cf5 \strokec5 wrapLabel\cf8 \strokec8 ),\cf5 \cb1 \strokec5 \
-\cb3                 datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\{\cf5 \cb1 \strokec5 \
-\cb3                     label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Importance Score'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 95\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 92\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 90\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 85\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 82\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 80\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 75\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 70\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 65\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                     backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
-\cb3                         brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 deepBlue\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                         brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 darkOrange\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 darkRed\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightSand\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cb1 \
-\cb3                     \cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                     borderColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ffffff'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     borderWidth\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 1\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}]\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 decisionFactorsCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bar'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  decisionFactorsData\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     indexAxis\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'y'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         x\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                             beginAtZero\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  color\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#e0e0e0'\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                            grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  overallSatisfactionCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'overallSatisfactionChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 overallSatisfactionCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'doughnut'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 'Satisfied'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 'Not Satisfied'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\{\cf5 \cb1 \strokec5 \
-\cb3                         data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 81\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 19\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                         backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \strokec5 brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '#e0e0e0'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                         borderColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '#ffffff'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                         borderWidth\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 2\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \}]\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     cutout\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 '70%'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  careerPathsCtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'careerPathsChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 careerPathsCtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bar'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 'PhD Graduates'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Industry R&D'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 45\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Academia (Postdoc/Lecturer)'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 20\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightTeal \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Finance & Consultancy'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 15\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Government & Public Sector'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 12\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 deepBlue \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \strokec5  label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'Other'\cf8 \strokec8 ,\cf5 \strokec5  data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 8\cf8 \strokec8 ],\cf5 \strokec5  backgroundColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 lightSand \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 ]\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     indexAxis\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'y'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         x\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  stacked\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \strokec5  grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \strokec5  ticks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  stacked\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \strokec5  grid\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  display\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  position\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bottom'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\
-\cb3             \cf11 \strokec11 const\cf5 \strokec5  salaryROICtx \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf9 \strokec9 'salaryROIChart'\cf8 \strokec8 ).\cf5 \strokec5 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf11 \strokec11 new\cf5 \strokec5  \cf13 \strokec13 Chart\cf8 \strokec8 (\cf5 \strokec5 salaryROICtx\cf8 \strokec8 ,\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 type\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'line'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                 data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     labels\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf9 \strokec9 '1 Year Post-Grad'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '5 Years Post-Grad'\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 '10 Years Post-Grad'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                     datasets\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                             label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'PhD Holder Median Salary'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 34000\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 39200\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 43000\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                             borderColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 accentOrange\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'rgba(238, 155, 0, 0.2)'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             fill\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             tension\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 0.1\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                             label\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 "Master's Holder Median Salary"\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             data\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf12 \strokec12 30000\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 33700\cf8 \strokec8 ,\cf5 \strokec5  \cf12 \strokec12 38000\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
-\cb3                             borderColor\cf8 \strokec8 :\cf5 \strokec5  brilliantBlues\cf8 \strokec8 .\cf5 \strokec5 mainTeal\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             backgroundColor\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'rgba(10, 147, 150, 0.2)'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             fill\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             tension\cf8 \strokec8 :\cf5 \strokec5  \cf12 \strokec12 0.1\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 ]\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                 options\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     responsive\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 true\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     maintainAspectRatio\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                     scales\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         y\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                             beginAtZero\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 false\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                             ticks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                                 callback\cf8 \strokec8 :\cf5 \strokec5  \cf11 \strokec11 function\cf8 \strokec8 (\cf5 \strokec5 value\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf11 \strokec11 return\cf5 \strokec5  \cf9 \strokec9 '\'a3'\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 value \cf8 \strokec8 /\cf5 \strokec5  \cf12 \strokec12 1000\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 +\cf5 \strokec5  \cf9 \strokec9 'k'\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                     plugins\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                         legend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  position\cf8 \strokec8 :\cf5 \strokec5  \cf9 \strokec9 'bottom'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
-\cb3                         tooltip\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  callbacks\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  title\cf8 \strokec8 :\cf5 \strokec5  tooltipTitleCallback \cf8 \strokec8 \}\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \};\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">Put your HTML text here&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;The Modern PhD: A Data-Driven Look at the Researcher's Journey&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f0f4f8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.chart-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 600px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-left: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-right: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 400px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-height: 450px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.chart-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>height: 350px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.text-accent-orange { color: #ee9b00; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bg-accent-orange { background-color: #ee9b00; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.border-accent-orange { border-color: #ee9b00; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.text-main-teal { color: #0a9396; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bg-main-teal { background-color: #0a9396; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.border-main-teal { border-color: #0a9396; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bg-deep-blue { background-color: #005f73; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.text-light-teal { color: #94d2bd; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bg-light-teal { background-color: #94d2bd; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bg-light-sand { background-color: #e9d8a6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.icon-style {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #ee9b00;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="text-gray-800"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="bg-deep-blue text-white text-center py-12 px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1 class="text-4xl md:text-6xl font-black tracking-tight"&gt;The Modern PhD&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-light-teal"&gt;A data-driven look at what drives, challenges, and rewards the next generation of researchers.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto p-4 md:p-8"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="motivations" class="mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-main-teal"&gt;The Heart of a Researcher&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-lg text-gray-600"&gt;The decision to pursue a doctorate is deeply personal, rooted in a powerful set of intrinsic motivations.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="icon-style mb-4"&gt;🧠&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Passion for a Subject&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;An enduring curiosity and a genuine love of learning are the primary drivers for prospective PhD candidates.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="icon-style mb-4"&gt;💡&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Original Contribution&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Researchers are animated by the desire to create new knowledge and make a unique contribution to their field.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="icon-style mb-4"&gt;📈&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Personal Growth&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;A PhD is viewed as the ultimate intellectual journey—a quest for profound personal and professional development.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="decision-factors" class="mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-lg shadow-md p-6 md:p-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="text-center mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl font-bold text-main-teal"&gt;The Decision Matrix&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-2 text-lg text-gray-600"&gt;Choosing a university is a complex process. While reputation matters, applicants weigh a nuanced set of factors.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="chart-container h-[500px] md:h-[600px]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;canvas id="decisionFactorsChart"&gt;&lt;/canvas&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-center mt-4 text-gray-600"&gt;The specific research program and supervisor reputation are foundational, but practical concerns like funding, location, and flexibility are critical differentiators for applicants.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="barriers" class="mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-main-teal"&gt;Overcoming the Hurdles&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-lg text-gray-600"&gt;Significant structural barriers can prevent talented individuals from pursuing research.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-4 text-accent-orange"&gt;The Financial Equation&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;The "fear of debt" is the most pervasive barrier. Fully-funded studentships are not just an incentive; they are a powerful tool for equity, transforming a PhD from a high-risk gamble into a viable career step.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-light-sand p-4 rounded-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-bold text-center"&gt;The Power of Full Funding&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-center text-gray-700"&gt;Models like Centres for Doctoral Training (CDTs) address key concerns:&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;ul class="mt-2 space-y-1 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="font-bold text-main-teal"&gt;✓&lt;/span&gt; Financial Anxiety&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="font-bold text-main-teal"&gt;✓&lt;/span&gt; Fear of Isolation (Cohort Model)&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="font-bold text-main-teal"&gt;✓&lt;/span&gt; Career Development&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-4 text-accent-orange"&gt;Barriers to Inclusion (EDI)&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;Students from underrepresented groups face distinct and intersecting challenges that can hinder their path to a PhD.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                     </span>&lt;div class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-2xl mr-3"&gt; ethnic minorities face funding gaps &amp; lack of role models.&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-2xl mr-3"&gt; disabled students fear stigma &amp; face support delays.&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-2xl mr-3"&gt; those with caring duties face intense time &amp; financial pressure.&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="experience" class="mb-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-main-teal"&gt;The Ideal PhD Experience&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-lg text-gray-600"&gt;What does a successful doctoral journey look like? The Postgraduate Research Experience Survey (PRES) provides the blueprint.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-1 flex flex-col justify-center items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-2 text-center"&gt;Overall Satisfaction&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="chart-container h-64 w-64"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                         </span>&lt;canvas id="overallSatisfactionChart"&gt;&lt;/canvas&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-center mt-2 text-gray-600"&gt;Across the UK, 81% of PGRs are satisfied with their experience, but key areas determine success.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6 md:col-span-1 lg:col-span-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-4 text-center"&gt;Pillars of a Positive Experience&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="grid grid-cols-2 gap-6 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Supervision&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;Expert, regular, and supportive guidance.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Resources&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;Access to labs, libraries, and workspaces.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Community&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;A collaborative, non-isolating culture.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Development&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;Skills training for future careers.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                         </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Wellbeing&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;Mental and emotional health support.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                         </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="font-bold"&gt;Assessment&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-600"&gt;Clear, transparent progress milestones.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>&lt;div class="mt-8 bg-white rounded-lg shadow-md p-6 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-2xl font-bold text-accent-orange"&gt;The Challenge of Isolation&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-6xl font-black text-main-teal my-4"&gt;80%&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-gray-600"&gt;of PhD students agree that a career in research can be lonely and isolating, making a supportive research culture a critical differentiator for universities.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="outcomes"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-main-teal"&gt;A Launchpad for Life&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-lg text-gray-600"&gt;A PhD is a powerful investment, opening doors to diverse careers and delivering a clear financial return.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-4 text-center"&gt;The "Dual Career Pathway"&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-center mb-4 text-gray-600"&gt;The majority of PhD holders build careers outside of traditional academia.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="chart-container h-80"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;canvas id="careerPathsChart"&gt;&lt;/canvas&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-bold mb-4 text-center"&gt;The Financial Return (ROI)&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-center mb-4 text-gray-600"&gt;Doctoral graduates see a significant and sustained salary premium over time.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                     </span>&lt;div class="chart-container h-80"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;canvas id="salaryROIChart"&gt;&lt;/canvas&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-deep-blue text-white text-center mt-12 py-6 px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-sm text-light-teal"&gt;Data synthesized from research on postgraduate researcher motivations and experiences. This infographic is for illustrative purposes.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-xs text-gray-400 mt-2"&gt;Created on: August 05, 2025&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const tooltipTitleCallback = (tooltipItems) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const item = tooltipItems[0];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let label = item.chart.data.labels[item.dataIndex];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (Array.isArray(label)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return label.join(' ');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return label;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const wrapLabel = (label) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const maxLen = 16;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (label.length &lt;= maxLen) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return label;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const words = label.split(' ');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const lines = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let currentLine = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (const word of words) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if ((currentLine + ' ' + word).trim().length &gt; maxLen) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>lines.push(currentLine.trim());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>currentLine = word;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>currentLine = (currentLine + ' ' + word).trim();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (currentLine) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>lines.push(currentLine.trim());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return lines;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const brilliantBlues = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>deepBlue: '#005f73',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mainTeal: '#0a9396',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>lightTeal: '#94d2bd',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>lightSand: '#e9d8a6',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>accentOrange: '#ee9b00',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>darkOrange: '#ca6702',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>darkRed: '#9b2226'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.onload = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const decisionFactorsCtx = document.getElementById('decisionFactorsChart').getContext('2d');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const decisionFactorsData = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>labels: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Course Suitability',<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Financial Relief (Funding)',<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Supervisor Reputation',<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Institutional Reputation',<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Career Prospects &amp; ROI',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Fear of Debt',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Locality &amp; Proximity',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Programme Flexibility',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>'Lifestyle &amp; Community'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>].map(wrapLabel),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>datasets: [{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>label: 'Importance Score',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>data: [95, 92, 90, 85, 82, 80, 75, 70, 65],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>backgroundColor: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>brilliantBlues.mainTeal, brilliantBlues.accentOrange, brilliantBlues.lightTeal, brilliantBlues.deepBlue,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>brilliantBlues.darkOrange, brilliantBlues.darkRed, brilliantBlues.lightSand, brilliantBlues.mainTeal, brilliantBlues.accentOrange</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>borderColor: '#ffffff',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>borderWidth: 1</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>new Chart(decisionFactorsCtx, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>type: 'bar',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data: decisionFactorsData,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>options: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>indexAxis: 'y',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>responsive: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>maintainAspectRatio: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>plugins: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>legend: { display: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>tooltip: { callbacks: { title: tooltipTitleCallback } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>scales: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>x: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>beginAtZero: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>grid: { color: '#e0e0e0' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>y: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                           </span>grid: { display: false }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const overallSatisfactionCtx = document.getElementById('overallSatisfactionChart').getContext('2d');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>new Chart(overallSatisfactionCtx, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>type: 'doughnut',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>labels: ['Satisfied', 'Not Satisfied'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>datasets: [{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>data: [81, 19],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>backgroundColor: [brilliantBlues.mainTeal, '#e0e0e0'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>borderColor: '#ffffff',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>borderWidth: 2</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>options: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>responsive: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>maintainAspectRatio: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>cutout: '70%',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>plugins: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>legend: { display: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>tooltip: { callbacks: { title: tooltipTitleCallback } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const careerPathsCtx = document.getElementById('careerPathsChart').getContext('2d');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>new Chart(careerPathsCtx, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>type: 'bar',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>labels: ['PhD Graduates'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>datasets: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{ label: 'Industry R&amp;D', data: [45], backgroundColor: brilliantBlues.mainTeal },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{ label: 'Academia (Postdoc/Lecturer)', data: [20], backgroundColor: brilliantBlues.lightTeal },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{ label: 'Finance &amp; Consultancy', data: [15], backgroundColor: brilliantBlues.accentOrange },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{ label: 'Government &amp; Public Sector', data: [12], backgroundColor: brilliantBlues.deepBlue },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{ label: 'Other', data: [8], backgroundColor: brilliantBlues.lightSand }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>options: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>indexAxis: 'y',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>responsive: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>maintainAspectRatio: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>scales: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>x: { stacked: true, grid: { display: false }, ticks: { display: false } },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>y: { stacked: true, grid: { display: false } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>plugins: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>legend: { position: 'bottom' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>tooltip: { callbacks: { title: tooltipTitleCallback } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const salaryROICtx = document.getElementById('salaryROIChart').getContext('2d');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>new Chart(salaryROICtx, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>type: 'line',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>labels: ['1 Year Post-Grad', '5 Years Post-Grad', '10 Years Post-Grad'],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>datasets: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>label: 'PhD Holder Median Salary',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>data: [34000, 39200, 43000],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>borderColor: brilliantBlues.accentOrange,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>backgroundColor: 'rgba(238, 155, 0, 0.2)',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>fill: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>tension: 0.1</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>label: "Master's Holder Median Salary",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>data: [30000, 33700, 38000],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>borderColor: brilliantBlues.mainTeal,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>backgroundColor: 'rgba(10, 147, 150, 0.2)',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>fill: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>tension: 0.1</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>options: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>responsive: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>maintainAspectRatio: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>scales: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>y: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>beginAtZero: false,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>ticks: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>callback: function(value) { return '£' + (value / 1000) + 'k'; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>plugins: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>legend: { position: 'bottom' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>tooltip: { callbacks: { title: tooltipTitleCallback } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
